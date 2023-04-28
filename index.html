@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" id="main" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    
+    <title>Login page</title>
+  <script type="module" crossorigin src="/assets/index-dfe0a2ec.js"></script>
+  <link rel="stylesheet" href="/assets/index-158b8dfb.css">
+</head>
+<body class="bg-blue-100 dark:bg-blue-950">
+
+    <header class="bg-blue-500 py-3 relative dark:bg-blue-800">
+        <div class="container mx-auto w-3/4 flex justify-between">
+            <div class="flex items-center flex-row-reverse">
+                <a class="font-semibold text-white pl-1" href="#">Secured Area</a>
+                <ahref="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/>
+                </svg>
+            </div>
+            
+              <nav>
+
+                <button id="navBtn" class="flex justify-end sm:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                      </svg>                      
+                </button>
+                <ul id="navMenu" class="absolute p-2 w-full top-12 left-0 text-center hidden sm:bg-blue-500  sm:relative sm:flex sm:top-0 sm:justify-end sm:dark:bg-blue-800">
+                    <li class="mb-1 lg:ml-10 sm:ml-2 sm:hover:bg-blue-700 text-center transition-colors sm:rounded-md"><a class="text-white font-semibold sm:p-2" href="#">Home</a></li>
+                    <li class="mb-1 lg:ml-10 sm:ml-2 sm:hover:bg-blue-700 text-center transition-colors sm:rounded-md"><a class="text-white font-semibold sm:p-2" href="#">Contact</a></li>
+                    <li class="mb-1 lg:ml-10 sm:ml-2 sm:hover:bg-blue-700 text-center transition-colors sm:rounded-md"><a class="text-white font-semibold sm:p-2" href="#">Login</a></li>
+
+                    <li class="rounded-md mb-1 lg:ml-10 sm:ml-2 bg-yellow-50 sm:hover:bg-orange-600 sm:hover:transition-colors sm:rounded-md dark:sm:bg-orange-900 dark:sm:hover:bg-black dark:bg-blue-800 dark:text-white"><a class="font-semibold sm:p-4 sm:text-yellow-900 dark:sm:text-white" href="#">Sign in</a></li>
+
+                    <li class="mb-1 lg:ml-10 sm:ml-2 sm:hover:bg-blue-700 text-center transition-colors sm:rounded-md">
+                        <button id="darkBtn" class="dark:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                      </svg>
+                        </button>
+                        
+                      </li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+
+
+    <section>
+            <div class="flex flex-col items-center md:flex-row overflow-hidden justify-center md:flex md:justify-center md:items-center">
+
+
+                <div class="flex pt-1 justify-center sm:pt-3 sm:scale-105 md:scale-x-150 md:scale-y-150 bg-blue-100 mb-5 md:mb-0 md:order-1 dark:bg-slate-800">
+                    <div class="w-1/2">
+                        <img src="./assets/login.svg" alt="Wait...">
+                    </div>
+                </div>
+
+
+                    <div class="z-0 flex flex-col md:items-center bg-white py-12 px-8 md:ml-20 md:my-10 md:h-auto 2xl:ml-30 shadow-xl xl:dark:p-20 dark:bg-slate-800">
+                    <h2 class="font-extrabold text-xl mb-2 dark:text-slate-100">Welcome Back</h2>
+                    <p class="opacity-60 tracking-tighter font-mono mb-5 dark:text-slate-100">please enter your details</p>
+
+                    <div class="flex flex-col w-80 lg:w-96">
+
+                        <label class="flex flex-col" for="Email"><span class="font-semibold dark:text-slate-100">Email Address</span>
+                            <input class="border p-1 border-x-0 mb-4" type="email" placeholder="Enter your Email Address" required autofocus>
+                        </label>
+
+
+
+                        <label class="flex flex-col relative" for="password"><span class="font-semibold dark:text-slate-100">Password</span>
+
+                                <!-- <i class="fa-sharp fa-regular fa-eye-slash absolute right-1 top-8"></i>
+                                <i class="fa-regular fa-eye absolute right-1 top-8"></i> -->
+
+                                <input id="passField" class="border p-1 border-x-0 mb-4 w-full" type="password" placeholder="Enter your Password" required>
+                            
+                        </label>
+
+
+                        <label for="submit">
+                            <input class="w-full bg-blue-800 text-white p-1 mt-2 rounded-md hover:bg-blue-600 hover:transition-colors duration-200" type="submit" value="SignIn">
+                        </label>
+                        
+                        <p class="font-thin text-sm mt-3 text-center tracking-tight dark:text-slate-100">Don't Have an account? <a class="text-blue-600 font-semibold hover:underline dark:text-blue-500" href="#">signUp</a></p>
+                    </div>
+                </div>      
+            </div>
+    </section>
+    <script src="./assets/index.js"></script>
+</body>
+</html>
